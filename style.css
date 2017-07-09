@@ -1,0 +1,24 @@
+.header{background: #ffcb00;color: #000; font-size: 16px; margin-bottom: 15px;text-align: center; padding: 5px 15px;}
+
+.bg-img{background: url(images/background.jpg)no-repeat fixed bottom center ;}
+.bg_grey h3{text-align: left;color:#fff;margin:10px 0 10px;border-bottom: 1px solid #020; padding:0 15px 10px;font-size:20px;}
+.bg_grey{background:rgba(0, 0,0, 0.7);border: 1px solid #eee; margin:15px 0; padding: 10px 5px;}
+.bg_grey-match{/*background:rgba(255, 255,255, 0.7);border: 1px solid #eee; margin:0px 0; padding: 0px 0px;*/}
+.bg_grey h5{font-size: 25px; color:#fff; margin: 20px 0 10px 15px;text-align: center;border-bottom: 1px solid #ddd;line-height: 0;padding: 0;}
+.bg_grey h5 span {background: #ff015b;padding: 5px 15px;}
+.br_1{border: 1px solid #ddd; margin:5px 0; padding: 10px 5px 5px;float: left;text-align: center;width: 100%;}
+p.date_format{color: #fff;  margin: 5px 0 0;}
+.bg_grey .thumbnail{display: inline-block;width:56%; margin: 1px 0.5%; float:left;background: #ccc}
+.bg_grey .thumbnail .caption{ padding: 0px 0;float: left;margin-left: 10px;}.bg_grey .thumbnail .caption p{margin: 0;text-align: left;}
+.bg_grey .thumbnail img{float: left; margin-left: 5px;}
+li span{color: red; width: 100%;}
+/*  Match details  pages */
+.bg_grey .thumbnail.det{ width: 100%;position: relative;margin-bottom: 20px;}
+.bg_grey .thumbnail.det span{position: absolute;bottom: -15px;background: #003050; color: #ffcb00;padding: 3px 15px;left: 40%;}
+.bg_grey .thumbnail.det .caption{ font-size: 40px;line-height: 70px;}
+
+.bg_grey .thumbnail.det{ width: 100%;position: relative;margin-bottom: 20px;}
+/* Team details pages */
+.bg_grey .thumbnail.det.txt-cent .caption{font-size: 20px;}
+.bg_grey .thumbnail.det.txt-cent .caption p{text-align: center;}
+.bg_grey .thumbnail.det.txt-cent span{position: relative;display: inline-block; margin: 20px 0 0  15px;left: inherit;bottom: inherit}

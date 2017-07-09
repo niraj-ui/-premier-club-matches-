@@ -1,0 +1,46 @@
+<div class=" container" >
+<div class="header">
+  Yearby filter  <label ><input type="checkbox" data-ng-model='search.type1' data-ng-true-value='2015' data-ng-false-value='' > 2015  </label>
+<label ><input type="checkbox" data-ng-model='search.type2' data-ng-true-value='2016' data-ng-false-value='' > 2016  </label>
+<label ><input type="checkbox" data-ng-model='search.type3' data-ng-true-value='2017' data-ng-false-value='' > 2017  </label>
+
+<input type="text" ng-model="teamYear" style="height: 30px;" placeholder="Type Year/Date">
+<input type="text" ng-model="teamName" style="height: 30px;" placeholder="Type Team name">
+<input type="text" ng-model="roundName" style="height: 30px;" placeholder="Type match day">
+    </div>
+    
+ <div ng-controller="ListController as matchData" ng-init="matchData.loadAllData()" >  
+<div ng-repeat="year in matchData  ">
+<div ng-repeat="yname in year  | filter:search.type1 | filter:search.type2 | filter:search.type3 " class="container">
+<div class="bg_grey">
+       <h5>  <span>{{yname.name}}</span></h5>
+    
+    <div ng-repeat="round in yname.rounds | filter : roundName" class="bg_grey-match">
+        <h3>{{round.name}}</h3>
+             
+             <div  ng-repeat="match in round.matches | filter : teamName | filter : teamYear " class="col-lg-4 col-md-4">
+            <a href="#/match/{{year.indexOf(yname)}}/{{yname.rounds.indexOf(round)}}/{{round.matches.indexOf(match)}}" class="br_1">
+            <div class="">    <div class="thumbnail"> <img src="images/code-logo/{{match.team1.code}}.png" style="height:20px">
+                <div class="caption"> <p class="ng-binding">{{match.team1.name}}</p>  </div>
+            </div>
+                <div class="thumbnail"> <img src="images/code-logo/{{match.team2.code}}.png" style="height:20px">
+                    <div class="caption"> <p class="ng-binding">{{match.team2.name}}</p>  </div>
+                </div></div>
+
+     <p class="date_format">Match Played on: <br> <strong class="ng-binding">{{match.date | date :  "dd  MMM  y"}}</strong> </p>
+
+            </a>
+
+             </div>
+        <div class="clearfix"></div>
+         </div>
+</div>
+         </div>        
+         
+     </div>
+    
+    </div>
+ 
+ </div>
+
+ 

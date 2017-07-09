@@ -1,0 +1,43 @@
+<div class="container" >
+    
+    <div ng-controller="teamDetailsController as singleTeam" ng-init="singleTeam.loadOneTeamData()">
+    <div class="container">
+       
+    <div class="bg_grey ">
+         
+        <h5>  <span>{{singleTeam.teamId}}</span></h5>
+
+ 
+         <div class="clearfix"></div><br><br>
+<div class="col-lg-4 col-md-4"><div class="thumbnail det txt-cent"> 
+<div class="caption txt-cent"> <p class="ng-binding">Total palyed  Matched:</p>  </div>
+<span><strong  id="totalMatch"></strong> </span></div></div>
+        
+<div class="col-lg-4 col-md-4"><div class="thumbnail det txt-cent"> 
+<div class="caption txt-cent"> <p class="ng-binding">Total Win  Matched:</p>  </div>
+<span><strong  id="winMatch"></strong> </span></div></div>
+        
+        
+<div class="col-lg-4 col-md-4"><div class="thumbnail det txt-cent"> 
+<div class="caption txt-cent"> <p class="ng-binding">Total Loss  Matched:</p>  </div>
+<span><strong  id="lossMatch"></strong> </span></div></div>
+        
+   
+        <div class="col-lg-4 col-md-4"><div class="thumbnail det txt-cent"> 
+<div class="caption "> <p class="ng-binding">Total draw  Matched:</p>  </div>
+<span><strong  id="drawMatch"></strong> </span></div></div>
+        
+        
+<div class="col-lg-4 col-md-4"><div class="thumbnail det txt-cent"> 
+<div class="caption txt-cent"> <p class="ng-binding">Total Goal  Score:</p>  </div>
+<span><strong  id="totalGoalMatch"></strong> </span></div></div>
+        
+        <div class="clearfix"></div><br> 
+        
+      
+        <div class="clearfix"></div><br>
+    </div>
+    </div>
+    </div>
+    
+</div>
